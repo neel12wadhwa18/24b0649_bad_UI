@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exit?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dialog" id="dialog">
+    <div class="titlebar">
+      <span class="titlebar-text">Exit Application</span>
+      <span class="fake-close" title="this does nothing">x</span>
+    </div>
+
+    <div class="dialog-body">
+      <div class="warning-icon">?</div>
+      <p class="question" id="question">
+        Do you really want to exit the application?
+      </p>
+
+      <div class="button-row" id="buttonRow">
+        <button class="btn btn-yes" id="yesBtn">Yes</button>
+        
+        <button class="btn btn-no" id="noBtn">No</button>
+      </div>
+    </div>
+
+    <div class="dialog-footer" id="footer">
+      Tip: the correct answer is No.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

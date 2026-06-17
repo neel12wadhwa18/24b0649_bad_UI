@@ -1,0 +1,117 @@
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;    
+}
+
+.dialog {
+  width: 360px;
+  max-width: 90vw;
+  background: #ffffff;
+  border: 2px solid #888;
+  position: relative;
+  z-index: 2;
+}
+
+.titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000080;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+.fake-close {
+  cursor: not-allowed;
+}
+
+.dialog-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.warning-icon {
+  font-size: 36px;
+}
+
+.question {
+  font-size: 16px;
+  color: #000;
+  margin: 12px 0 20px;
+  line-height: 1.4;
+}
+
+.button-row {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: 1px solid #777;
+  background: #e6e6e6;
+  color: #000;
+  padding: 8px 18px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #d6d6d6;
+}
+
+.btn-yes.runaway {
+  position: fixed;
+  z-index: 9;
+}
+
+.dialog-footer {
+  background: #f0f0f0;
+  color: #333;
+  font-size: 12px;
+  padding: 8px 10px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.shutdown {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  padding: 30px;
+  z-index: 9999;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.smug {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  z-index: 9998;
+  padding: 20px;
+}
